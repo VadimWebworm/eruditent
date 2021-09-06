@@ -1,0 +1,317 @@
+@import "vars";
+@import "global";
+@import "fonts";
+
+//header start
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+.header__logo {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.7;
+    color: #514eef;
+    span {
+        color: #ef924e;
+    }
+}
+.header__menu--off,
+.header__image-user--off,
+.header__lang--off {
+    display: none;
+}
+.header__lang--on {
+    padding: 20px 20px 20px 22px;
+    width: 60px;
+    height: 60px;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+}
+.header__menu--on,
+.header__image-user--on,
+.header__lang--on {
+    display: block;
+}
+.lang__ru--on img,
+.lang__en--on img {
+    border-radius: 45px;
+    display: block;
+}
+.lang__ru--off img,
+.lang__en--off img {
+    display: none;
+}
+.lang__ru--on,
+.lang__en--on {
+    position: relative;
+}
+.drop-down__list {
+    height: 0px;
+    overflow: scroll;
+    opacity: 0;
+    position: absolute;
+    width: 60px;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    right: -20px;
+    top: -21px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.drop-down__list a {
+    padding: 5px 0px 5px 22px;
+    display: block;
+}
+.lang__ru--on .drop-down__list li,
+.lang__en--on .drop-down__list li {
+    margin-left: 0;
+    display: block;
+}
+.lang__ru--on.drop-down:hover .drop-down__list,
+.lang__en--on.drop-down:hover .drop-down__list {
+    height: 88px;
+    overflow: visible;
+    opacity: 1;
+    transition: all 0.01s;
+}
+.header__menu-list {
+    li {
+        display: inline-block;
+        & + li {
+            margin-left: 40px;
+        }
+    }
+}
+.header__menu-list a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.33px;
+    color: #a2a2a2;
+}
+.header__menu-list .active {
+    opacity: 1;
+    color: #444;
+}
+.header__wrapper {
+    background-color: #fff;
+}
+.chat {
+    position: relative;
+    span {
+        background-color: rgba($color: #ef4e4e, $alpha: 1);
+        border-radius: 50%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 14px;
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        text-align: center;
+        right: -19px;
+        top: 4px;
+    }
+}
+.header__image-user--on img {
+    width: 40px;
+    height: 40px;
+}
+//header end
+
+//start main
+.main{
+    margin-top: 25px;
+}
+.main__inner-form {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    input {
+        display: block;
+        width: 100%;
+        background-color: #f6f6f6;
+        border-radius: 6px;
+        border: none;
+        height: 36px;
+        padding-left: 36px;
+        padding-right: 60px;
+        &::placeholder {
+            color: #dedede;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+    button {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        left: 5px;
+        top: 27px;
+        cursor: pointer;
+    }
+}
+.main__settings {
+    position: absolute;
+    right: -4px;
+    top: 14px;
+}
+.icon-search {
+    color: #b2b2b2;
+    font-size: 18px;
+}
+.dropbtn {
+    color: #444;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+.main__inner-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.sort__title {
+    color: $text;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.sort__criterion-inner {
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    padding: 0 15px 0 8px;
+    margin-left: 10px;
+    border-radius: 4px;
+    width: 449px;
+}
+.sort__criterion-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sort__criterion-item {
+    background-color: #12cc94;
+    color: #fff;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 4px 22px 4px 6px;
+    margin-right: 4px;
+    border-radius: 2px;
+    position: relative;
+}
+.sort__criterion-delete {
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(68, 68, 68, 0.3);
+    border-radius: 2px;
+    height: 20px;
+    width: 20px;
+    // padding: 5px 6px 3px 6px;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+    cursor: pointer;
+    background-image: url(../images/cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px 8px;
+}
+.sort__criterion-add {
+    background-color: #b2b2b2;
+    color: #fff;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 4px 6px 4px 6px;
+    margin-right: 4px;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+.sort__delete {
+    color: #ef4e4e;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+//end main
+
+//start footer
+.footer {
+    background-color: #5d5d6e;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    height: 57px;
+    align-items: center;
+    text-align: center;
+}
+.footer__menu-list {
+    li {
+        display: inline-block;
+        & + li {
+            margin-left: 40px;
+        }
+    }
+}
+.footer__menu-list a {
+    color: #ededf1;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.footer__social-link {
+    li {
+        display: inline-block;
+        & + li {
+            margin-left: 6px;
+        }
+    }
+}
+.footer__social-link li a {
+    color: #ededf1;
+    font-size: 19px;
+}
+//end footer

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERUDITENT</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        Erudite<span>NT</span>
+                    </div>
+                    <nav class="header__menu--on">
+                        <ul class="header__menu-list">
+                            <li>
+                                <a href="#" class="active">
+                                    Учись и Учи
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="chat">
+                                    Чаты <span>1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Гильдии
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__image-user--on">
+                        <a href="#"><img src="images/profile_logo.png" alt=""></a>
+
+                    </div>
+                    <div class="header__lang--off">
+                        <div class="lang__dropdown-content">
+                            <ul>
+                                <li class="lang__ru--on drop-down" href="#">
+                                    <img src="images/ru_flag.png" alt="">
+                                    <ul class="drop-down__list">
+                                        <li>
+                                            <a href="#"><img src="images/ru_flag.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="images/en_flag.png" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="lang__en--off drop-down" href="#">
+                                    <img src="images/en_flag.png" alt="">
+                                    <ul class="drop-down__list">
+                                        <li>
+                                            <a href="#"><img src="images/en_flag.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="images/ru_flag.png" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container__main">
+            <div class="main__inner">
+                <div class="main__inner-form">
+                    <form>
+                        <button type="submit">
+                            <div class="icon-search"></div>
+                        </button>
+                        <input type="text" placeholder="испанский язык" required>
+                        <div class="main__settings">
+                            <div class="dropdown">
+                                <div onclick='myFunction()' class="dropbtn icon-equalizer"></div>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="main__inner-sort">
+                    <div class="sort">
+                        <div class="sort__title">
+                            Хочу научиться
+                        </div>
+                        <div class="sort__criterion-inner">
+                            <div class="sort__criterion-box">
+                                <div class="sort__criterion-item">
+                                    Веб-дизайн
+                                    <div class="sort__criterion-delete"></div>
+                                </div>
+                                <div class="sort__criterion-item">
+                                    Верстка
+                                    <div class="sort__criterion-delete"></div>
+                                </div>
+                                <div class="sort__criterion-add">
+                                    Добавить тег
+                                </div>
+                            </div>
+                            <div class="sort__delete">
+                                Очистить
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sort">
+                        <div class="sort__title">
+                            Могу научиться
+                        </div>
+                        <div class="sort__criterion-inner">
+                            <div class="sort__criterion-box">
+                                <div class="sort__criterion-item">
+                                    Английский
+                                    <div class="sort__criterion-delete"></div>
+                                </div>
+                                <div class="sort__criterion-item">
+                                    Испанский
+                                    <div class="sort__criterion-delete"></div>
+                                </div>
+                                <div class="sort__criterion-add">
+                                    Добавить тег
+                                </div>
+                            </div>
+                            <div class="sort__delete">
+                                Очистить
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li>
+                            <a href="#">
+                                О проекте
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Обратная связь
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Поддержать проект
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="footer__social-link">
+                    <li><a href="#" class="icon-vk"></a></li>
+                    <li><a href="#" class="icon-facebook"></a></li>
+                    <li><a href="#" class="icon-instagram"></a></li>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

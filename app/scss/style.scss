@@ -3,6 +3,9 @@
 @import "fonts";
 
 //header start
+.header {
+    margin-bottom: 25px;
+}
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -80,6 +83,7 @@
     transition: all 0.01s;
 }
 .header__menu-list {
+    padding-top: 25px;
     li {
         display: inline-block;
         & + li {
@@ -124,11 +128,11 @@
 //header end
 
 //start main
-.main{
-    margin-top: 25px;
-}
-.main__inner-form {
+
+.main__inner-form,
+.chat__inner-form {
     position: relative;
+    margin: 0 10px;
     padding-top: 20px;
     padding-bottom: 10px;
     input {
@@ -140,6 +144,7 @@
         height: 36px;
         padding-left: 36px;
         padding-right: 60px;
+        outline: 0;
         &::placeholder {
             color: #dedede;
             font-size: 14px;
@@ -276,6 +281,177 @@
     cursor: pointer;
 }
 //end main
+
+//start chat
+.chat {
+    margin-bottom: 25px;
+}
+.chat__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat__aside {
+    border-right: 0.5px solid #f0f0f0;
+    max-width: 322px;
+    width: 100%;
+}
+.chat__inner-form {
+    margin-left: 10px;
+    padding-right: 10px;
+    input {
+        padding-right: 15px;
+    }
+}
+.erudite__button {
+    max-width: 292px;
+    width: 100%;
+    height: 36px;
+    background-color: #514eef;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    padding-top: 10px;
+    transition: all 0.2s ease;
+    &:hover {
+        background-color: #3532b8;
+    }
+}
+.chat__button {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.chat__inner-message {
+    border-top: 0.5px solid #f0f0f0;
+    max-height: 660px;
+}
+.simplebar-track.simplebar-vertical {
+    width: 5px;
+}
+.simplebar-scrollbar::before {
+    background-color: #f6f6f6;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.simplebar-scrollbar.simplebar-visible::before {
+    opacity: 1;
+}
+
+.chat__message-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding-left: 20px;
+    border-bottom: 0.5px solid #f0f0f0;
+}
+
+.chat__image-user {
+    position: relative;
+    margin-right: 8px;
+}
+.chat__image-user--online::after {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #12cc94;
+    border: 1px solid #fff;
+    right: 4px;
+    bottom: 3px;
+}
+.chat__message-username {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text;
+}
+.chat__message-status {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    max-width: 170px;
+    color: #b2b2b2;
+    padding-right: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.chat__message-status--new {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: $text;
+}
+.chat__message-info {
+    max-width: 60px;
+    width: 100%;
+    position: relative;
+}
+.chat__message-lasttime {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #b2b2b2;
+    text-align: end;
+    padding-right: 10px;
+}
+.chat__message-number--new {
+    position: absolute;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #fff;
+    height: 17px;
+    width: 17px;
+    background-color: #ef4e4e;
+    border-radius: 45%;
+    text-align: center;
+    padding-top: 3px;
+    right: 13px;
+    top: 23px;
+}
+.chat__message-area {
+    margin: 0 auto;
+    text-align: center;
+}
+.chat__area-banner {
+    position: relative;
+    
+}
+.chat__area-line {
+    position: absolute;
+    max-width: 74px;
+    width: 100%;
+    height: 3px;
+    background-color: $text;
+    left: 44px;
+    border-radius: 6px;
+}
+
+.line__one {
+    top: 23px;
+}
+.line__two {
+    top: 37px;
+}
+.line__three {
+    top: 51px;
+}
+
+.chat__area-text {
+    margin-top: 24px;
+    width: 162px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+}
+//end chat
 
 //start footer
 .footer {

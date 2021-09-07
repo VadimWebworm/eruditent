@@ -27,14 +27,12 @@ li {
     padding: 0;
     list-style: none;
 }
-.container__fluid {
-    max-width: 100%;
-    margin: auto;
-    padding: 0 50px;
-}
+
 .container {
     max-width: 984px;
     margin: auto;
+    background-color: #fff;
+    border-radius: 6px;
 }
 .container__header {
     max-width: 984px;
@@ -43,14 +41,27 @@ li {
     padding: 0 0 0 20px;
     border-radius: 6px;
 }
-.container__main{
+.container__main {
     max-width: 984px;
     margin: auto;
     background-color: #fff;
-    padding: 0 20px;
+    padding: 0 10px;
     border-radius: 6px;
 }
-
+.container__footer {
+    max-width: 984px;
+    margin: auto;
+}
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #514eef;
+    border-radius: 8px;
+}
 // .mov{
 //     display: none !important;
 //     animation: none !important;

@@ -19,12 +19,12 @@
                     <nav class="header__menu--on">
                         <ul class="header__menu-list">
                             <li>
-                                <a href="#" class="active">
+                                <a href="#">
                                     Учись и Учи
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="chat">
+                                <a href="#" class="chat active">
                                     Чаты <span>1</span>
                                 </a>
                             </li>
@@ -112,12 +112,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="chat__message-item">
+                        <div class="chat__message-item chat__message-item--mute chat__message-item--on">
                             <div class="chat__image-user chat__image-user--offline">
                                 <a href="#"><img src="images/chat/Rectangle 35.png" alt=""></a>
                             </div>
                             <div class="chat__message-content">
-                                <a href="#" class="chat__message-username">
+                                <a href="#" class="chat__message-username chat__message-username--mute">
                                     Федор В.
                                 </a>
                                 <a href="#" class="chat__message-status">
@@ -128,17 +128,17 @@
                                 <div class="chat__message-lasttime">
                                     21.03.2021
                                 </div>
-                                <div class="chat__message-number">
+                                <div class="chat__message-number chat__message-number--mute">
 
                                 </div>
                             </div>
                         </div>
-                        <div class="chat__message-item">
+                        <div class="chat__message-item chat__message-item--mute">
                             <div class="chat__image-user chat__image-user--offline">
                                 <a href="#"><img src="images/chat/Rectangle 39.png" alt=""></a>
                             </div>
                             <div class="chat__message-content">
-                                <a href="#" class="chat__message-username">
+                                <a href="#" class="chat__message-username chat__message-username--mute">
                                     Aнна В.
                                 </a>
                                 <a href="#" class="chat__message-status">
@@ -149,8 +149,8 @@
                                 <div class="chat__message-lasttime">
                                     21.03.2021
                                 </div>
-                                <div class="chat__message-number">
-
+                                <div class="chat__message-number chat__message-number--new chat__message-number--mute">
+                                    3
                                 </div>
                             </div>
                         </div>
@@ -367,15 +367,81 @@
 
                     </div>
                 </aside>
-                <div class="chat__message-area chat__message-area-off">
-                    <div class="chat__area-banner">
-                        <img src="images/chat/newchat.svg" alt="">
-                        <div class="chat__area-line line__one"></div>
-                        <div class="chat__area-line line__two"></div>
-                        <div class="chat__area-line line__three"></div>
+                <div class="chat__message-area">
+                    <div class="chat__message_null">
+                        <div class="chat__area-banner">
+                            <img src="images/chat/newchat.svg" alt="">
+                            <div class="chat__area-line line__one"></div>
+                            <div class="chat__area-line line__two"></div>
+                            <div class="chat__area-line line__three"></div>
+                        </div>
+                        <div class="chat__area-text">Выберите переписку
+                            или создайте новый чат
+                        </div>
                     </div>
-                    <div class="chat__area-text">Выберите переписку
-                        или создайте новый чат
+                    <div class="tab__item" id="1">
+                        <div class="chat__message-header">
+                            <div class="chat__message-person">
+                                <div class="chat__image-user chat__image-user--online">
+                                    <a href="#"><img src="images/chat/Rectangle 35.png" alt=""></a>
+                                </div>
+                                <a href="#" class="chat__header-username chat__header-username--mute">
+                                    Федор Васильев
+                                </a>
+                            </div>
+                            <div class="chat__header-buttons">
+                                <button class="header__buttons-action">
+                                    <div class="dropdown__buttons-action dropdown">
+                                        <div onclick='myFunction()' class="icon-menu"></div>
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <a href="#">Поиск по диалогу
+                                                <img src="images/chat/Rectangle112.png" alt="">
+                                            </a>
+                                            <a href="#">Смотреть файлы диалога
+                                                <img src="images/chat/Rectangle113.png" alt="">
+                                            </a>
+                                            <a href="#">Отключить уведомления
+                                                <img src="images/chat/Rectangle114.png" alt="">
+                                            </a>
+                                            <a href="#">Заблокировать
+                                                <img src="images/chat/Rectangle115.png" alt="">
+                                            </a>
+                                            <a href="#">Очистить диалог
+                                                <img src="images/chat/Rectangle116.png" alt="">
+                                            </a>
+                                        </div>
+                                </button>
+                                <button class="header__buttons-video">
+                                    <img src="images/chat/Union.svg" class="icon-video" alt="">
+                                </button>
+                                <button class="header__buttons-adduser">
+                                    <!-- <img src="images/chat/add user.svg"   alt=""> -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="chat__message-body">
+                            <div class="chat__message-data">26 января 2021 г.</div>
+                            <div class="chat__message-inner">
+                                
+                                <div class="chat__message chat__message-alienmessage">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.
+                                </div>
+                                <div class="chat__message chat__message-mymessage">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.
+                                    <img src="images/chat/imagemsg.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab__item" id="2">
+                    </div>
+                    <div class="tab__item" id="3">
+                    </div>
+                    <div class="tab__item" id="4">
                     </div>
                 </div>
             </div>
